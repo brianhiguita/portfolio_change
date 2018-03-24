@@ -1,0 +1,108 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h2 {
+  margin-top: 0;
+  font-weight: 400; }
+
+hr {
+  border: solid 1px #acabab; }
+
+.title {
+  padding: 35px 0px 30px;
+  color: #acabab; }
+
+footer {
+  position: sticky; }
+
+footer p {
+  font-size: 1.5em;
+  color: #acabab;
+  padding: 10px 0px; }
+
+.flex {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.block {
+  margin: 20px;
+  height: 200px;
+  width: 30%;
+  color: #FFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 200px;
+  font-size: 18px;
+  position: relative;
+  background-color: #644cad;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: 0.3s all ease; }
+  .block .smallblockcontent {
+    opacity: 0;
+    -webkit-animation: fadein 2s forwards;
+    animation: fadein 2s forwards;
+    animation-delay: 0.5s; }
+  .block.expanded {
+    transition: 0.3s all ease;
+    width: 100%;
+    min-height: 600px;
+    height: 80%;
+    padding: 40px;
+    line-height: normal;
+    background: #644cad;
+    background: -moz-linear-gradient(left, #644cad 0%, #4426a8 100%);
+    background: -webkit-linear-gradient(left, #644cad 0%, #4426a8 100%);
+    background: linear-gradient(to right, #644cad 0%, #4426a8 100%); }
+    .block.expanded .smallblockcontent {
+      display: none; }
+  .block .content {
+    text-align: left;
+    display: none;
+    opacity: 0; }
+    .block .content.display {
+      -webkit-animation: fadein 2s forwards;
+      animation: fadein 2s forwards;
+      animation-delay: 0.5s;
+      display: block; }
+  .block a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; }
+
+/*# sourceMappingURL=style.css.map */
