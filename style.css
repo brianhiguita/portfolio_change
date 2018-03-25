@@ -29,6 +29,7 @@ body {
   padding: 0px;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
+  background: #2B4B6F;
   -webkit-font-smoothing: antialiased; }
 
 h2 {
@@ -50,12 +51,41 @@ footer p {
   color: #acabab;
   padding: 10px 0px; }
 
+.contact-content {
+  margin-top: 50px; }
+
+.contact-content span {
+  margin-left: 20px; }
+
+#content3 div div label {
+  margin-top: 20px; }
+
 .flex {
   min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center; }
 
+.content-title {
+  margin-bottom: 20px; }
+
+.content-subheading {
+  margin-bottom: 20px; }
+
+.portfolio div {
+  min-height: 180px; }
+
+.port-main {
+  margin-bottom: 10px;
+  margin-top: 15px; }
+
+.img-cover {
+  background-color: blue;
+  height: 100%; }
+
+@media screen and (min-width: 992px) {
+  #content-me {
+    margin-bottom: 53px; } }
 .block {
   margin: 20px;
   height: 200px;
@@ -67,7 +97,7 @@ footer p {
   line-height: 200px;
   font-size: 18px;
   position: relative;
-  background-color: #644cad;
+  background-color: #8DACCF;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   transition: 0.3s all ease; }
   .block .smallblockcontent {
@@ -76,16 +106,15 @@ footer p {
     animation: fadein 2s forwards;
     animation-delay: 0.5s; }
   .block.expanded {
-    transition: 0.3s all ease;
+    transition: 0.5s all ease;
     width: 100%;
-    min-height: 600px;
-    height: 80%;
+    height: auto;
     padding: 40px;
     line-height: normal;
-    background: #644cad;
-    background: -moz-linear-gradient(left, #644cad 0%, #4426a8 100%);
-    background: -webkit-linear-gradient(left, #644cad 0%, #4426a8 100%);
-    background: linear-gradient(to right, #644cad 0%, #4426a8 100%); }
+    background: #8DACCF;
+    background: -moz-linear-gradient(left, #8DACCF 0%, #517297 100%);
+    background: -webkit-linear-gradient(left, #8DACCF 0%, #517297 100%);
+    background: linear-gradient(to right, #8DACCF 0%, #517297 100%); }
     .block.expanded .smallblockcontent {
       display: none; }
   .block .content {

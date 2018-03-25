@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
 
 $font:'Source Sans Pro', sans-serif;
-$primary:#644cad;
-$secondary:#4426a8;
+$primary:#8DACCF;
+$secondary:#112A46;
 $shadow:0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 *,
@@ -35,7 +35,7 @@ body {
   padding:0px;
   margin:0;
   font-family:$font;
-  // background: #24252A;
+  background: #2B4B6F;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -63,6 +63,19 @@ footer p {
   padding: 10px 0px;
 }
 
+.contact-content {
+  margin-top: 50px;
+}
+
+.contact-content span {
+  margin-left: 20px;
+  // margin-bottom: 5px;
+}
+
+#content3 div div label {
+  margin-top:20px;
+}
+
 
 // box
 
@@ -73,8 +86,41 @@ footer p {
   justify-content:center;
 }
 
+.content-title {
+  margin-bottom: 20px;
+}
+
+.content-subheading {
+  margin-bottom: 20px;
+}
+
+.portfolio div {
+  min-height: 180px;
+
+}
+
+.port-main {
+  margin-bottom: 10px;
+  margin-top: 15px;
+
+}
 
 
+.portfolio-item {
+  // border: solid 2px red;
+}
+
+.img-cover{
+  background-color: blue;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 992px) {
+  #content-me {
+    margin-bottom: 53px;
+  }
+}
 .block {
 
   margin: 20px;
@@ -97,16 +143,15 @@ footer p {
     animation-delay:0.5s;
   }
   &.expanded {
-    transition:0.3s all ease;
+    transition:0.5s all ease;
     width:100%;
-    min-height: 600px;
-    height:80%;
+    height:auto;
     padding:40px;
     line-height:normal;
-    background: #644cad;
-    background: -moz-linear-gradient(left, #644cad 0%, #4426a8 100%);
-    background: -webkit-linear-gradient(left, #644cad 0%, #4426a8 100%);
-    background: linear-gradient(to right, #644cad 0%, #4426a8 100%);
+    background: #8DACCF;
+    background: -moz-linear-gradient(left, #8DACCF 0%, #517297 100%);
+    background: -webkit-linear-gradient(left, #8DACCF 0%, #517297 100%);
+    background: linear-gradient(to right, #8DACCF 0%, #517297 100%);
     .smallblockcontent {
       display:none;
     }
